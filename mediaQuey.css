@@ -1,0 +1,73 @@
+@media only screen and (max-width: 600px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar .shoping {
+    display: none;
+  }
+  .navbar .menu_bar {
+    display: block;
+    grid-column: 8/9;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .navbar .menu{
+    position: absolute;
+    transform: translateX(250%);
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+    padding-right:35px;
+     background-color: rgb(255, 238, 0, 0.8);
+    margin-top: 38em;
+    transition: all 1s;
+    border-bottom-left-radius: 25px;
+  }
+
+  .navbar .menu_toggle{
+      transform: translateX(140%);
+      
+  }
+
+
+
+
+
+.footer .list-oneline {
+   background-image:radial-gradient(rgb(65, 63, 63)  , rgb(43, 43, 42) 50%) ;
+}
+
+
+
+.footer .tw {
+   grid-column: 8/9;
+   box-shadow: none;
+
+}
+
+.footer .ins {
+  grid-column: 9/10;
+  box-shadow: none;
+  
+  
+  
+}
+
+.footer .fa {
+  grid-column: 10/11;
+  box-shadow: none;
+ 
+ 
+ 
+}
+
+.footer .you {
+  grid-column: 11/12;
+  box-shadow: none;
+  
+  
+  
+}
+}

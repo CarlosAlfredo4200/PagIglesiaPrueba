@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(255, 238, 0);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+.navbar .logo {
+  width: 70px;
+  height: 70px;
+  grid-column: 2/3;
+}
+.navbar .menu {
+  grid-column: 4/7;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .menu li {
+  list-style: none;
+}
+.navbar .menu a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.navbar .menu_bar {
+  display: none;
+}
+.navbar .shoping {
+  grid-column: 8/9;
+}
+
+/* Section Main*/
+
+.alabanza {
+  height: 81vh;
+  background-image: url(./image/music.jpeg);
+  background-position: center;
+  max-width: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.alabanza .info-content {
+  grid-column: 3/10;
+  grid-row: 2/7;
+  color: white;
+}
+.alabanza h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(61, 61, 61);
+  font-size: 2em;
+  font-weight: 600;
+}
+.alabanza h1 {
+  font-size: 5em;
+  color: yellow;
+}
+.alabanza p {
+  font-weight: 300;
+  text-align: center;
+}
+
+.alabanza .btn {
+  font-size: 1.5em;
+  background: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 238, 0);
+  border-radius: 50px;
+  margin-top: 15px;
+}
+.alabanza .btn:hover {
+  background-color: rgb(255, 238, 0);
+  color: black;
+  border: 1px solid black;
+  transition: all 1.5s;
+}
+.alabanza h1:hover {
+  color: rgb(51, 50, 50);
+  transition: all 1s;
+}
+
+/* section footer*/
+
+.footer .list-oneline {
+    height: 80px;
+    margin-top: 1px;
+    display: grid;
+   grid-template-columns: repeat(12,1fr);
+   align-items: center;
+   gap: 2px;
+   background-image:radial-gradient(rgb(92, 90, 90)  , rgb(43, 43, 42) 50%) ;
+}
+
+.footer .tw {
+   grid-column: 5/6;
+  width: 26px;
+  height: 26px;
+  box-shadow: 10px s;
+  box-shadow: 5px 5px 40px rgb(255, 255, 255);
+
+}
+
+.footer .ins {
+  grid-column: 6/7;
+ width: 30px;
+ height: 30px;
+box-shadow: 5px 5px 40px rgb(255, 255, 255);
+}
+
+.footer .fa {
+  grid-column: 7/8;
+ width: 28px;
+ height: 28px;
+  box-shadow: 5px 5px 40px rgb(252, 252, 250);
+}
+
+.footer .you {
+  grid-column: 8/9;
+ width: 30px;
+ height: 40px;
+  box-shadow: 5px 5px 40px rgb(255, 255, 255);
+}
+
+.footer .contact{
+    grid-column: 2/3;
+    color: white;
+    font-size: 1.2em;
+    
+}
+.footer .num{
+    margin-left: 5px;
+    grid-column: 3/4;
+    color: yellow;
+    font-size: 1em;
+    align-items: center;
+}
